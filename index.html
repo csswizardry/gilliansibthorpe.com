@@ -4,11 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
-  <title>Gillian Sibthorpe</title>
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:700" rel="stylesheet" />
 
-  <h1 class="page-title">Merry Christmas!</h1>
+  <title>Gillian Sibthorpe</title>
+
+  <style>
+    * {
+      margin:  0;
+      padding: 0;
+      list-style: none;
+      font-size: 100%;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-color: rgb(249, 2, 9);
+    }
+
+    .page {
+      position: relative;
+    }
+
+      .page__title {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        left: 18px;
+        text-align: center;
+        font-family: "Mountains of Christmas", cursive;
+        font-size: 58px;
+        font-size: 15vw;
+        line-height: 1;
+        color: #fff;
+        text-shadow: 0 -2px rgba(0, 0, 0, 0.25);
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+      }
+
+  </style>
+
+</head>
+<body class="page">
+
+  <h1 class="page__title">Merry Christmas!</h1>
 
 </body>
 </html>
