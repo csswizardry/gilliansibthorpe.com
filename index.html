@@ -64,11 +64,21 @@
         text-decoration: underline;
       }
 
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
     .photo-profile {
       width:  128px;
       height: 128px;
       border-radius: 100%;
       vertical-align: middle;
+      animation: rotate 2s linear infinite;
     }
 
       @media screen and (min-width: 45em) {
