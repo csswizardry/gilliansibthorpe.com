@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+
   <title>Gillian Sibthorpe – Digital Project Manager</title>
 
   <style>
+
     * {
       margin:  0;
       padding: 0;
@@ -16,22 +19,87 @@
     }
 
     html {
-      font: menu;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      padding: 3%;
+      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+      @media screen and (min-width: 45em) {
+        html {
+          font-size: 24px;
+        }
+      }
+
+    h1, h2 {
+      font-weight: 600;
+    }
+
+    h1, h2,
+    .photo-profile {
+      margin-bottom: 10px;
     }
 
     h1 {
       font-size: 24px;
-      line-height: 1.4;
     }
+
+      @media screen and (min-width: 45em) {
+        h1 {
+          font-size: 36px;
+        }
+      }
+
+    a {
+      color: #00858a;
+      text-decoration: none;
+    }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+    .photo-profile {
+      width:  128px;
+      height: 128px;
+      border-radius: 100%;
+      vertical-align: middle;
+    }
+
+      @media screen and (min-width: 45em) {
+        .photo-profile {
+          width:  256px;
+          height: 256px;
+        }
+      }
 
   </style>
 
 </head>
 <body>
 
+  <img src="img/photo-me.jpg" alt="Photograph of Gillian Sibthorpe" class="photo-profile" />
+
   <h1>Gillian Sibthorpe</h1>
 
   <h2>Digital Project Manager, Certified Scrum Master</h2>
+
+  <ul>
+    <li>
+      <a href="https://twitter.com/GillSibthorpe">Twitter</a>
+    </li>
+    <li>
+      <a href="https://github.com/GillSibthorpe">GitHub</a>
+    </li>
+    <li>
+      <a href="mailto:gillianjacqueline@gmail.com">Email</a>
+    </li>
+  </ul>
 
 </body>
 </html>
