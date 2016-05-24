@@ -10,12 +10,23 @@
 
   <style>
 
+    /**
+     * Quick and dirty reset to normalise basic styles.
+     */
     * {
       margin:  0;
       padding: 0;
       list-style: none;
       font-size: 100%;
       box-sizing: border-box;
+    }
+
+    /**
+     * Share common styles across selectors.
+     */
+    h1, h2,
+    .photo-profile {
+      margin-bottom: 10px;
     }
 
     html {
@@ -29,6 +40,9 @@
       color: #333;
     }
 
+      /**
+       * Increase font size across entire page on larger screens.
+       */
       @media screen and (min-width: 45em) {
         html {
           font-size: 24px;
@@ -37,11 +51,6 @@
 
     h1, h2 {
       font-weight: 600;
-    }
-
-    h1, h2,
-    .photo-profile {
-      margin-bottom: 10px;
     }
 
     h1 {
@@ -64,11 +73,14 @@
         text-decoration: underline;
       }
 
+    /**
+     * 1. Remove phantom whitespace under images.
+     */
     .photo-profile {
       width:  128px;
       height: 128px;
       border-radius: 100%;
-      vertical-align: middle;
+      vertical-align: middle; /* [1] */
     }
 
       @media screen and (min-width: 45em) {
