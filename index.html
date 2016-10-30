@@ -10,6 +10,22 @@
 
   <style>
 
+    :root {
+      --spacing: 10px;
+    }
+
+    @media screen and (min-width: 45em) {
+      :root {
+        --spacing: 20px;
+      }
+    }
+
+    @media screen and (min-width: 64em) {
+      :root {
+        --spacing: 30px;
+      }
+    }
+
     /**
      * Quick and dirty reset to normalise basic styles.
      */
@@ -25,8 +41,10 @@
      * Share common styles across selectors.
      */
     h1, h2,
+    p,
     .photo-profile {
       margin-bottom: 10px;
+      margin-bottom: var(--spacing);
     }
 
     html {
