@@ -5,131 +5,9 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 
   <title>Gillian Sibthorpe – Digital Project Manager</title>
-
-  <style>
-
-    :root {
-      --spacing: 10px;
-    }
-
-    @media screen and (min-width: 45em) {
-      :root {
-        --spacing: 20px;
-      }
-    }
-
-    @media screen and (min-width: 64em) {
-      :root {
-        --spacing: 30px;
-      }
-    }
-
-    /**
-     * Quick and dirty reset to normalise basic styles.
-     */
-    * {
-      margin:  0;
-      padding: 0;
-      list-style: none;
-      font-size: 100%;
-      box-sizing: border-box;
-    }
-
-    /**
-     * Share common styles across selectors.
-     */
-    h1, h2,
-    p,
-    .photo-profile {
-      margin-bottom: 10px;
-      margin-bottom: var(--spacing);
-    }
-
-    html {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.4;
-      padding: 3%;
-      text-align: center;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-      /**
-       * Increase font size across entire page on larger screens.
-       */
-      @media screen and (min-width: 45em) {
-        html {
-          font-size: 24px;
-        }
-      }
-
-    h1, h2 {
-      font-weight: 600;
-    }
-
-    h1 {
-      font-size: 24px;
-    }
-
-      @media screen and (min-width: 45em) {
-        h1 {
-          font-size: 36px;
-        }
-      }
-
-    a {
-      color: #00858a;
-      text-decoration: none;
-    }
-
-      a:hover,
-      a:focus {
-        text-decoration: underline;
-      }
-
-    /**
-     * 1. Remove phantom whitespace under images.
-     */
-    .photo-profile {
-      width:  128px;
-      height: 128px;
-      border-radius: 100%;
-      vertical-align: middle; /* [1] */
-      background-image: url('data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/7gAmQWRvYmUAZMAAAAABAwAVBAMGCg0AAAIBAAAC9QAAA5kAAAQu/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMDAwMDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wgARCAAQABADAREAAhEBAxEB/8QApgABAQAAAAAAAAAAAAAAAAAACAUBAQEBAAAAAAAAAAAAAAAAAAUGBBAAAgIDAQEAAAAAAAAAAAAAAwQFBwECBhIUEQACAgEDAgcAAAAAAAAAAAACAwEEBQAREiETMSIUJDQlBhIAAQIEBAUFAAAAAAAAAAAAARECACESAzFBYXHRIjITBPBRkaHhEwEBAAMBAQADAAAAAAAAAAABEQAhMUFRYXGR/9oADAMBAAIRAxEAAAE3qxMzScmpCmbgLX//2gAIAQEAAQUCqKrEJ6etGtM80zQKBn47sq6N23Hf/9oACAECAAEFAnnzR66b316Snr1H5OFj/9oACAEDAAEFAlwYdIcPxGR1zgbug9l//9oACAECAgY/AiGBovELzevrOB0d0Dmp6dxmkMaQHFrS5CUWeHDXSG3rcvEJnq38j//aAAgBAwIGPwKlxcLVSGnjkNYNdRsPQtqx2lKUOu2yRdLwhxQpj8e8O7wDvIAlvpvmsf/aAAgBAQEGPwJ6c9u6tXmoIKocL3zqrrIW3cS7fYSC9iPzQk56xqoGLRbqJm2NGkq8CQyVsba4aob7Ec0+tTykZnfiQyM9J31+gyFa66jcfna2Kx10KoXAxs18eZLbbEjiUV7HfkWCyRBqo2Gee2sq/NIa/OtV9JIvGnVx1pMcZyKQBntq9ko6gcmUJiB8df/aAAgBAQMBPyGXInS4TwUmw6aiMPSqmkheGIXjSJaFH4J3ZXU2T1ECnqIbtn//2gAIAQIDAT8h+K0RQQh9W00j3CYUqk8aaFLz030mRUWFRnouyVTXWBdbb0qV37fECteZ/9oACAEDAwE/IQYjvC7F/gj9TJXSTHXqpfol09UwoYIhEjR1NB/Y7nSZb4fiyfkf0z//2gAMAwEAAhEDEQAAEFYv/9oACAEBAwE/EIi9t0o0mtyWhjZpY6gUV8busZQtlzet0ZCQARoASWR4a0lP/9oACAECAwE/EN/BlJjG/tWB05i8IkAFobzSKzQSh0QCWpJIIyJoUmF4NwCl6SJZWgY//9oACAEDAwE/EBZkewxXziFeGjePp0ERdncQbQGQYShVJQNezQ+gEgcq0gu8m0QQZqEBg5//2Q==');
-      background-size: cover;
-    }
-
-      @media screen and (min-width: 45em) {
-        .photo-profile {
-          width:  256px;
-          height: 256px;
-        }
-      }
-
-      .intro-text {
-        color: #555;
-      }
-
-      .social-links li {
-        display: inline-block;
-        padding: 0 5px;
-      }
-
-      @media screen and (min-width: 45em) {
-        .social-links li {
-          padding: 0 10px;
-        }
-      }
-
-      .social-links li + li {
-        border-left: 1px solid #ccc;
-      }
-
-  </style>
 
   <link rel="shortcut icon" href="favicon.png" />
   <meta name="theme-color" content="#00858a" />
@@ -144,8 +22,14 @@
   <h1>Gillian Sibthorpe</h1>
 
   <h2>Digital Project Manager, Certified&nbsp;Scrum&nbsp;Master</h2>
-
-  <p class="intro-text">Hi there, I’m Gill. I coordinate teams to deliver high quality digital products.</p>
+  
+  <p class="intro-text">
+  
+    <p1> Hi there, I’m Gill. I'm a digital project manager who's passionate about leading productive, efficient and empowered teams to deliver quality products.</p1> 
+  
+    <p2> I'm also an avid foodie and a fan of all things health and nutrition related.</p2>
+   
+ </p>
 
   <ul class="social-links">
 
